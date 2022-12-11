@@ -1,0 +1,119 @@
+============================= test session starts =============================
+platform win32 -- Python 3.10.8, pytest-7.1.2, pluggy-1.0.0 -- D:\Anaconda\envs\db\python.exe
+cachedir: .pytest_cache
+rootdir: D:\onedrive\db\2022_CDMS_PJ2_REQUIRE\bookstore
+collecting ... frontend begin test
+collected 54 items
+
+fe/test/test_add_book.py::TestAddBook::test_ok PASSED                    [  1%]
+fe/test/test_add_book.py::TestAddBook::test_error_non_exist_store_id PASSED [  3%]
+fe/test/test_add_book.py::TestAddBook::test_error_exist_book_id PASSED   [  5%]
+fe/test/test_add_book.py::TestAddBook::test_error_non_exist_user_id PASSED [  7%]
+fe/test/test_add_funds.py::TestAddFunds::test_ok PASSED                  [  9%]
+fe/test/test_add_funds.py::TestAddFunds::test_error_user_id PASSED       [ 11%]
+fe/test/test_add_funds.py::TestAddFunds::test_error_password PASSED      [ 12%]
+fe/test/test_add_stock_level.py::TestAddStockLevel::test_error_user_id PASSED [ 14%]
+fe/test/test_add_stock_level.py::TestAddStockLevel::test_error_store_id PASSED [ 16%]
+fe/test/test_add_stock_level.py::TestAddStockLevel::test_error_book_id PASSED [ 18%]
+fe/test/test_add_stock_level.py::TestAddStockLevel::test_ok PASSED       [ 20%]
+fe/test/test_bench.py::test_bench PASSED                                 [ 22%]
+fe/test/test_cancel_order.py::TestCancelOrder::test_ok PASSED            [ 24%]
+fe/test/test_cancel_order.py::TestCancelOrder::test_authorization_error PASSED [ 25%]
+fe/test/test_cancel_order.py::TestCancelOrder::test_repeat_cancel PASSED [ 27%]
+fe/test/test_create_store.py::TestCreateStore::test_ok PASSED            [ 29%]
+fe/test/test_create_store.py::TestCreateStore::test_error_exist_store_id PASSED [ 31%]
+fe/test/test_deliver_goods.py::TestDeliverGoods::test_ok PASSED          [ 33%]
+fe/test/test_deliver_goods.py::TestDeliverGoods::test_wrong_order_error PASSED [ 35%]
+fe/test/test_deliver_goods.py::TestDeliverGoods::test_wrong_store_error PASSED [ 37%]
+fe/test/test_deliver_goods.py::TestDeliverGoods::test_repeat_delivery PASSED [ 38%]
+fe/test/test_login.py::TestLogin::test_ok PASSED                         [ 40%]
+fe/test/test_login.py::TestLogin::test_error_user_id PASSED              [ 42%]
+fe/test/test_login.py::TestLogin::test_error_password PASSED             [ 44%]
+fe/test/test_new_order.py::TestNewOrder::test_non_exist_book_id PASSED   [ 46%]
+fe/test/test_new_order.py::TestNewOrder::test_low_stock_level PASSED     [ 48%]
+fe/test/test_new_order.py::TestNewOrder::test_ok PASSED                  [ 50%]
+fe/test/test_new_order.py::TestNewOrder::test_non_exist_user_id PASSED   [ 51%]
+fe/test/test_new_order.py::TestNewOrder::test_non_exist_store_id PASSED  [ 53%]
+fe/test/test_password.py::TestPassword::test_ok PASSED                   [ 55%]
+fe/test/test_password.py::TestPassword::test_error_password PASSED       [ 57%]
+fe/test/test_password.py::TestPassword::test_error_user_id PASSED        [ 59%]
+fe/test/test_payment.py::TestPayment::test_ok PASSED                     [ 61%]
+fe/test/test_payment.py::TestPayment::test_authorization_error PASSED    [ 62%]
+fe/test/test_payment.py::TestPayment::test_not_suff_funds PASSED         [ 64%]
+fe/test/test_payment.py::TestPayment::test_repeat_pay PASSED             [ 66%]
+fe/test/test_register.py::TestRegister::test_register_ok PASSED          [ 68%]
+fe/test/test_register.py::TestRegister::test_unregister_ok PASSED        [ 70%]
+fe/test/test_register.py::TestRegister::test_unregister_error_authorization PASSED [ 72%]
+fe/test/test_register.py::TestRegister::test_register_error_exist_user_id PASSED [ 74%]
+fe/test/test_search_books.py::TestLogin::test_search_multiple PASSED     [ 75%]
+fe/test/test_search_books.py::TestLogin::test_search_by_title PASSED     [ 77%]
+fe/test/test_search_books.py::TestLogin::test_search_by_tag PASSED       [ 79%]
+fe/test/test_search_books.py::TestLogin::test_search_by_author PASSED    [ 81%]
+fe/test/test_search_books.py::TestLogin::test_search_by_book_intro PASSED [ 83%]
+fe/test/test_search_books.py::TestLogin::test_search_by_title_store PASSED [ 85%]
+fe/test/test_search_books.py::TestLogin::test_search_by_tag_store PASSED [ 87%]
+fe/test/test_search_books.py::TestLogin::test_search_by_author_store PASSED [ 88%]
+fe/test/test_search_books.py::TestLogin::test_search_by_book_intro_store PASSED [ 90%]
+fe/test/test_search_orders.py::TestSearchOrders::test_ok PASSED          [ 92%]
+fe/test/test_search_orders.py::TestSearchOrders::test_authorization_error PASSED [ 94%]
+fe/test/test_take_delivery.py::TestTakeDelivery::test_ok PASSED          [ 96%]
+fe/test/test_take_delivery.py::TestTakeDelivery::test_authorization_error PASSED [ 98%]
+fe/test/test_take_delivery.py::TestTakeDelivery::test_repeat_delivery PASSED [100%]D:\onedrive\db\2022_CDMS_PJ2_REQUIRE\bookstore\be\serve.py:17: UserWarning: The 'environ['werkzeug.server.shutdown']' function is deprecated and will be removed in Werkzeug 2.1.
+  func()
+2022-12-09 15:45:35,431 [Thread-4166 ] [INFO ]  127.0.0.1 - - [09/Dec/2022 15:45:35] "GET /shutdown HTTP/1.1" 200 -
+
+
+======================= 54 passed in 174.03s (0:02:54) ========================
+frontend end test
+No data to combine
+Name                              Stmts   Miss Branch BrPart  Cover
+-------------------------------------------------------------------
+be\__init__.py                        0      0      0      0   100%
+be\app.py                             7      7      2      0     0%
+be\model\__init__.py                  0      0      0      0   100%
+be\model\buyer.py                   201     49     56     11    77%
+be\model\db.py                      109      2     24      1    98%
+be\model\error.py                    31      4      0      0    87%
+be\model\search.py                  105     19     24      1    84%
+be\model\seller.py                   84     13     26      2    86%
+be\model\user.py                    141     21     30      5    85%
+be\serve.py                          34      1      2      1    94%
+be\view\__init__.py                   0      0      0      0   100%
+be\view\auth.py                      42      0      0      0   100%
+be\view\buyer.py                     57      0      2      0   100%
+be\view\search.py                   100      8     16      8    86%
+be\view\seller.py                    38      0      0      0   100%
+fe\__init__.py                        0      0      0      0   100%
+fe\access\__init__.py                 0      0      0      0   100%
+fe\access\auth.py                    31      0      2      0   100%
+fe\access\book.py                    71      1     16      2    97%
+fe\access\buyer.py                   54      0      4      0   100%
+fe\access\new_buyer.py                8      0      0      0   100%
+fe\access\new_seller.py               8      0      0      0   100%
+fe\access\search.py                  49      0      2      0   100%
+fe\access\seller.py                  37      0      2      0   100%
+fe\bench\__init__.py                  0      0      0      0   100%
+fe\bench\run.py                      13      0      6      0   100%
+fe\bench\session.py                  47      0     14      1    98%
+fe\bench\workload.py                125      1     28      2    98%
+fe\conf.py                           11      0      0      0   100%
+fe\conftest.py                       17      0      0      0   100%
+fe\test\gen_book_data.py             48      0     18      0   100%
+fe\test\test_add_book.py             36      0     12      0   100%
+fe\test\test_add_funds.py            23      0      2      0   100%
+fe\test\test_add_stock_level.py      39      0     12      0   100%
+fe\test\test_bench.py                 6      2      0      0    67%
+fe\test\test_cancel_order.py         41      0      2      0   100%
+fe\test\test_create_store.py         20      0      2      0   100%
+fe\test\test_deliver_goods.py        62      1      6      1    97%
+fe\test\test_login.py                28      0      2      0   100%
+fe\test\test_new_order.py            40      0      2      0   100%
+fe\test\test_password.py             33      0      2      0   100%
+fe\test\test_payment.py              60      1      6      1    97%
+fe\test\test_register.py             31      0      2      0   100%
+fe\test\test_search_books.py         85      4     20      4    92%
+fe\test\test_search_orders.py        43      0      2      0   100%
+fe\test\test_take_delivery.py        60      1      6      1    97%
+-------------------------------------------------------------------
+TOTAL                              2075    135    352     41    93%
+Wrote HTML report to htmlcov\index.html
